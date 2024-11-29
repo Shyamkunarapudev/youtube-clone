@@ -6,7 +6,7 @@ import MainContainer from './components/MainContainer'
 function App() {
 
   return (
-    <div>
+    <div className='mx-4'>
       <Header />
       <div className='flex'>
         <Sidebar />
