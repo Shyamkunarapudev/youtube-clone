@@ -1,7 +1,11 @@
+import CategoriesButtonsSection from "./CategoriesButtonsSection";
+import VideosContainerSection from "./VideosContainerSection";
+
 function MainContainer () {
   return (
     <div>
-      MainContainer
+      <CategoriesButtonsSection />
+      <VideosContainerSection />
     </div>
   )
 }
