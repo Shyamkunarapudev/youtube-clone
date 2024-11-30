@@ -1,17 +1,13 @@
 import './App.css'
+import Body from './Body'
 import Header from './components/Header'
-import Sidebar from './components/Sidebar'
-import MainContainer from './components/MainContainer'
 
 function App() {
 
   return (
     <div className='mx-4'>
       <Header />
-      <div className='flex'>
-        <Sidebar />
-        <MainContainer />
-      </div>
+      <Body />
     </div>
   )
 }
