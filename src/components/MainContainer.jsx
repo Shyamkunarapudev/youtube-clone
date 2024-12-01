@@ -3,7 +3,7 @@ import VideosContainerSection from "./VideosContainerSection";
 
 function MainContainer () {
   return (
-    <div>
+    <div className="w-[86%]">
       <CategoriesButtonsSection />
       <VideosContainerSection />
     </div>
