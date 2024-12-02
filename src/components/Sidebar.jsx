@@ -1,4 +1,10 @@
+import { useSelector } from "react-redux";
+
+
 function Sidebar () {
+  const isMenuOpen = useSelector((appStore)=> appStore.nav.isMenuOpen)
+
+  if(!isMenuOpen) return null; // this is early return or we can use ternary operator
   return (
     <div className="mr-4 mt-4 w-[14%]">
       <div className="border-b-[1px]">

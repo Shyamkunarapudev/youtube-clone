@@ -1,8 +1,18 @@
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/navSlice";
+
+
 function Header () {
+  const dispatch = useDispatch()
+  const toggleMenuHandler = () => {
+    dispatch(toggleMenu())
+  }
   return (
     <div className="grid grid-flow-col my-1 items-center ">
       <div className="flex items-center">
-        <img className="w-5 mr-5" src="https://static.thenounproject.com/png/462023-200.png" alt="" />
+        <img 
+        onClick={()=>toggleMenuHandler()}
+        className="w-5 mr-5" src="https://static.thenounproject.com/png/462023-200.png" alt="" />
         <img className="h-5 w-24" src="https://www.pngkey.com/png/full/505-5052878_youtube-chanel-youtube-logo-jpg.png" alt="" />
       </div>
       <div className="w-[500px]">
