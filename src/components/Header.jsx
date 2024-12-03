@@ -13,7 +13,9 @@ function Header () {
         <img 
         onClick={()=>toggleMenuHandler()}
         className="w-5 mr-5" src="https://static.thenounproject.com/png/462023-200.png" alt="" />
+        <a href="/">
         <img className="h-5 w-24" src="https://www.pngkey.com/png/full/505-5052878_youtube-chanel-youtube-logo-jpg.png" alt="" />
+        </a>
       </div>
       <div className="w-[500px]">
         <input className="border border-gray-400 p-1 px-4 w-10/12 rounded-l-full" type="text" placeholder="Search" />
